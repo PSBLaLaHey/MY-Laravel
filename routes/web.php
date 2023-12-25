@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Route::get('/my-route', function () {
     //$data['']="";
-    $data = ['val_a' => 'น้องบอม ตัวเล็กน่ารักเอาใจเก่ง'];
-    $data['val_b']="1700 เท่านั้นสนใจทักได้ค่าาา";
+    $data = ['val_a' => 'เลือกตัวตั้ง'];
+    $data['val_b']="ใส่ในช่อง";
     return view('myfolder.mypage',$data);
 });
 

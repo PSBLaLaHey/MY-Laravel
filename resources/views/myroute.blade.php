@@ -27,9 +27,12 @@
             margin:0;
         }
         .h1title{
+            border: 2px solid rgb(210, 83, 245);
+            background-color: tomato;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: lightpink;
         }
         .title{
             color: rgb(255, 255, 255);
@@ -43,7 +46,7 @@
             align-items: center;
         }
         .box {
-            width: 150px;
+            width: 170px;
             height: 265px;
             border: 2px solid black;
             overflow: scroll;
