@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My Route Page</h1>
+    <h1 class="h1title">My Route Page</h1>
     <div class="main">
         <?php $multi_x = $myinput ;?>
+        <br>
         <h1 class="title">ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
         <br>
         <div class="box">
@@ -24,6 +25,11 @@
         *{
             padding:0;
             margin:0;
+        }
+        .h1title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .title{
             color: rgb(255, 255, 255);
