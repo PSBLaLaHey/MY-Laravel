@@ -7,35 +7,51 @@
     <title>MyLaravel</title>
 </head>
 <body>
-    <br>
-    <br>
-    <div class="main">
-        <h1>Welcome to Multiplication table Web</h1>
+    <div class="content">
         <br>
-        <h1>
+        <br>
+        <div class="main">
+            <h1>Welcome to Multiplication table Web</h1>
+            <br>
+            <h1>
             <?php echo $val_a . ' ' . $val_b; ?>
-        </h1>
-        <br>
-        <h1>{{$val_a}} {{$val_b}}</h1>
+            </h1>
+            <br>
+            <h1>{{$val_a}} {{$val_b}}</h1>
+        </div>
+        <br><br><br>
+        <p class="p_1">ใส่เลขสิ</p>
+        <form class="inputV" method="post" action="/myroute">
+            @csrf
+                <input type="number" name="myinput">
+                <button type="submit">Submit</button>
+        </form>
     </div>
-    <br><br><br>
-    <form class="inputV" method="post" action="/myroute">
-        @csrf
-        <input type="number" name="myinput">
-        <button type="submit">Submit</button>
-    </form>
+
     <style>
         *{
             padding:0;
             margin:0;
         }
+        .content{
+            width: 100%;
+            height: 100vh;
+            background-color: wheat;
+        }
         .main{
+            border: 2px solid slategray;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            background-color: plum;
         }
         .inputV{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p_1{
             display: flex;
             justify-content: center;
             align-items: center;
