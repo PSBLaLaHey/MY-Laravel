@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\MyContorller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Http\Request;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/my-controller', [MyContorller::class, 'index']);
+Route::get('/my-controller2', 'App\Http\Controllers\MyContorller@index');
+Route::namespace('App\Http\Controllers')->group(function() {
+    Route::get('/my-contorller3', 'MyContorller@index');
+    Route::post('my-controller3-post', 'MyContorller@store');
+});
+Route::resource('/my-controller4', MyContorller::class);
 
 Route::get('/', function () {
     return view('welcome');
