@@ -36,7 +36,7 @@
         .content{
             width: 100%;
             height: 100vh;
-            background-color: wheat;
+            background-image: url('https://c.wallhere.com/images/cb/23/ac4c38042e2394ecb8d8ffbed81c-1579551.png!d');
         }
         .main{
             border: 2px solid slategray;
