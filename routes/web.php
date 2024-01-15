@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\MyContorller;
+use App\Http\Controllers\C_titles;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use App\Http\Controllers\MyContorller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('titles', C_titles::class);
+
 Route::get('/my-controller', [MyContorller::class, 'index']);
 Route::get('/my-controller2', 'App\Http\Controllers\MyContorller@index');
 Route::namespace('App\Http\Controllers')->group(function() {
