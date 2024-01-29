@@ -80,9 +80,7 @@
                                         <td>{{ $index + 1}}.</td>
                                         <td>{{ $title->tit_name }}</td>
                                         <td>
-                                            <div class="progress progress-xs">
-                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                            </div>
+                                            {{$title->tit_is_active}}
                                         </td>
                                         <td><span class="badge bg-danger">55%</span></td>
                                     </tr>

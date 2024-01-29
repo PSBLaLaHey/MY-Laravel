@@ -40,8 +40,8 @@ class C_titles extends Controller
             $tit_is_active = 0;
         }
         $m_tit_name = new M_titles;
-        $m_titles->tit_name = $tit_name;
-        $m_titles->tit_is_active = $tit_is_active;
+        $m_titles -> tit_name = $tit_name;
+        // $m_titles->tit_is_active = $tit_is_active;
         $m_titles->save();
 
         return Redirect::to('/titles');
@@ -53,6 +53,9 @@ class C_titles extends Controller
     public function show(string $id)
     {
         //
+        $data['title_id'] = M_titles::find($id);
+        $data['titles'] = M_titles::all();
+        return view('titles.index',data);
     }
 
     /**
