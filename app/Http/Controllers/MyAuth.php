@@ -22,7 +22,7 @@ class MyAuth extends Controller
         $data = $req->all();
         // use Illuminate\Support\Facades\Auth;
         if(Auth::attempt(['email' => $data['email'], 'password' => $data['password']])){
-            return Redirect::to('/');
+            return Redirect::to('titles');
         }else{
             return Redirect::to('login');
         }

@@ -185,7 +185,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <img src="{{ url('assets/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
                     </div>
                 </div>
 
@@ -246,7 +246,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <form action="{{ url('/logout') }}" method="post" >
                         @csrf
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-success" style="background:red">Logout</button>
+                            <button type="submit" class="btn btn-success" style="background:red ;width:100%">Logout</button>
                         </div>
                     </form>
 
