@@ -55,7 +55,6 @@
                                 </div>
                             </div>
                             <!-- /.card-body -->
-
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-success">บันทึก</button>
                             </div>

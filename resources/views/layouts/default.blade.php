@@ -36,6 +36,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
                 </li>
+
             </ul>
 
             <!-- Right navbar links -->
@@ -240,6 +241,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                     </ul>
+                </nav>
+                <nav>
+                    <form action="{{ url('login') }}">
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success">Logout</button>
+                        </div>
+                    </form>
+
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
