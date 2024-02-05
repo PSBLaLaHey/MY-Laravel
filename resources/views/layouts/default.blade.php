@@ -243,9 +243,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </ul>
                 </nav>
                 <nav>
-                    <form action="{{ url('login') }}">
+                    <form action="{{ url('/logout') }}" method="post" >
+                        @csrf
                         <div class="card-footer">
-                            <button type="button" class="btn btn-success">Logout</button>
+                            <button type="submit" class="btn btn-success" style="background:red">Logout</button>
                         </div>
                     </form>
 
